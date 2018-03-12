@@ -1,33 +1,21 @@
-# PYNQ_facialRec
-Embedded facial recognition system involving PYNQ board, Webcam, and HDMI output. 
+# PYNQ Facial Recognition Implementation
+Miami University ECE 387 Spring 2018 Midterm Project
+Author: Jacob Iarve
+
+# Introduction
+For my midterm project, I have interfaced the Xilinx PYNQ-Z1 Board with a webcam and an HDMI output.
+Using the PYNQ board, it is easy to create overlays that abstract low-level FPGA logic into high 
+level languages such as Python 3. Using overlays, I installed a Python Facial Recognition package 
+that I used to create a Facial Recognition Security System.
+
+Integrating the following 
+
+### Built With
+OpenCV 2 - Comes installed on PYNQ board.
+* [Ageitgey Facial Recognition](https://github.com/ageitgey/face_recognition) -Facial Recognition Library Used
+* [PYNQ Board](https://github.com/Xilinx/PYNQ) -PYNQ Board Libraries
 
 
-This system was developed for educational purposes. 
-For Miami University Spring 2018 ECE 387: Embedded Systems Design course.
-
-Hardware setup instructions:
-
-Attach MicroUSB to computer and Ethernet to computer and PYNQ board.
-Place preloaded SIMcard with the PYNQ.io data on it into the board.
-Set JP4 Boot Jumper to SD.
-Set JP3 Boot Jumper to USB.
-
-Board should false blue and green once turned on successfully.
-
-Plug in Webcam to USB slot.
-Plug in HDMI out to selected output display.
 
 
-Software Set up Instructions:
-Install Jupyter Notebooks.
 
-Open up Terminal (MAC)
-run Jupyter Notebook -once webpage pops up.
-
-Open up Settings:
-Set Ethernet Connection to a static IP adress.
-
-Open up Chrome (preferred browser)
-Go to url:   192.168.2.99:9090
-
-Run selected program sequentially via Python 3 Notebook.
