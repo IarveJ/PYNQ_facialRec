@@ -9,6 +9,8 @@ For my midterm project, I have interfaced the Xilinx PYNQ-Z1 with a webcam and a
 Using PYNQ, it is easy to create overlays that abstract low-level FPGA logic into high 
 level languages such as Python 3. Using overlays to program in Python, I installed a Python Facial 
 Recognition package that I used to create a Facial Recognition Security System.
+### Demo
+Add a video geez dude
 ### Built With
 * OpenCV 2 - Comes installed on PYNQ.
 * [Ageitgey Facial Recognition](https://github.com/ageitgey/face_recognition) -Facial Recognition Library Used
@@ -32,5 +34,9 @@ the code to work with the PYNQ board. Overall, most of the code used was an inte
 * Added video image processing from simple capture and display image processing in example.
 * Integrated Facial Recognition libary to work on PYNQ
 * Extensively used Operating Systems to import image files and install Python Library
+### References
+* [Raspberry Pi example](https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py) -Ageitgey's Raspberry Pi example adapted for implemention with PYNQ
+* [Webcam Face Detection](https://github.com/Xilinx/PYNQ/blob/v1.4/Pynq-Z1/notebooks/examples/opencv_face_detect_webcam.ipynb) -PYNQ example using OpenCV to interface webcam and HDMI output, and detect faces.
+
 
 
