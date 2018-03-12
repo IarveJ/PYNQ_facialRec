@@ -27,7 +27,10 @@ To develop this code, I first used the [Webcam Face Detection](https://github.co
 This example allowed me to simply take a picture with openCV face detection, and display the resultant image via HDMI out.
 Using this code I implemented a loop that allowed for the camera to work in video. Due to the high amount of output lag, I 
 decreased the processing to every other frame. Finally, I used the [Raspberry Pi example](https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py) noted in Ageitgey's and integrated
-the code to work with the PYNQ board. 
-
+the code to work with the PYNQ board. Overall, most of the code used was an integration of those two examples.
+### Added Value
+* Added video image processing from simple capture and display image processing in example.
+* Integrated Facial Recognition libary to work on PYNQ
+* Extensively used Operating Systems to import image files and install Python Library
 
 
