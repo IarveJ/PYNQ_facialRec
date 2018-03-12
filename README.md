@@ -12,7 +12,7 @@ Recognition package that I used to create a Facial Recognition Security System.
 ### Built With
 * OpenCV 2 - Comes installed on PYNQ board.
 * [Ageitgey Facial Recognition](https://github.com/ageitgey/face_recognition) -Facial Recognition Library Used
-* [PYNQ Board](https://github.com/Xilinx/PYNQ) -PYNQ Board Libraries
+* [PYNQ Board](https://github.com/Xilinx/PYNQ) -PYNQ Libraries
 ### Installation
 Interface PYNQ via the Getting Started Guide on [PYNQ.io](http://pynq.readthedocs.io/en/latest/getting_started.html). Make sure to connected via the Ethernet mode. 
 Once connected, open up a Terminal in Jupyter notebooks and run the following command:
