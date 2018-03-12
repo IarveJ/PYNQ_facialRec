@@ -1,5 +1,6 @@
 # PYNQ Facial Recognition Implementation
 Miami University ECE 387 Spring 2018 Midterm Project
+
 Author: Jacob Iarve
 
 ## Getting Started
@@ -13,7 +14,7 @@ Recognition package that I used to create a Facial Recognition Security System.
 * [Ageitgey Facial Recognition](https://github.com/ageitgey/face_recognition) -Facial Recognition Library Used
 * [PYNQ Board](https://github.com/Xilinx/PYNQ) -PYNQ Board Libraries
 ### Installation
-
+Interface PYNQ via the Getting Started Guide on [PYNQ.io](http://pynq.readthedocs.io/en/latest/getting_started.html). Make sure to connected via the Ethernet mode. 
 
 
 
