@@ -15,6 +15,11 @@ Recognition package that I used to create a Facial Recognition Security System.
 * [PYNQ Board](https://github.com/Xilinx/PYNQ) -PYNQ Board Libraries
 ### Installation
 Interface PYNQ via the Getting Started Guide on [PYNQ.io](http://pynq.readthedocs.io/en/latest/getting_started.html). Make sure to connected via the Ethernet mode. 
+Once connected, open up a Terminal in Jupyter notebooks and run the following command:
+```
+sudo pip install git+https://github.com/ageitgey/face_recognition
+```
+The installation may take many hours to complete however, once completed the user can simply plug in the drivers and run [my code](https://github.com/IarveJ/PYNQ_facialRec/blob/master/PYNQ_FacialRecognition.py).
 
 
 
