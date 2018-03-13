@@ -17,6 +17,13 @@ each identified individual. Once completed, PYNQ will input every other frame, p
 any faces in the frame. In shunt, the program will look to see if the detected face matches any of the 
 facial encodings from the identified individuals. If the face matches, the system will print their name
 under their face or print "UNKNOWN" if the face is not recognized.
+### System Architecture
+  My system has two major drivers that need to be included for the code to execute. The first is a webcam,
+  I used the Logitech C270, however any webcam that can be interfaced by OpenCV will work. This webcam is 
+  interfaced via USB connection. The second driver is the HDMI output. I have included a HDMI to VGA adapter
+  when I ran the system so that it would output to our lab's monitors. Using an adapter does create 
+  issues in the execution and these bugs are discussed in the known issues section below. Finally, these drivers
+  are interfaced directly to the PYNQ board itself and the machine will run if disconnected to jupyter notebooks. 
 ### Demo
 [![Click to view on Youtube](https://img.youtube.com/vi/-fjIbl0YfcM/0.jpg)](https://www.youtube.com/watch?v=-fjIbl0YfcM)
 
@@ -34,8 +41,8 @@ sudo pip install git+https://github.com/ageitgey/face_recognition
 The installation may take many hours to complete.
 
 Once completed the user can simply upload pictures via juptyer notebooks and redirect them to easily found
-file location and paste these into the code with the identified individuals name. [My code](https://github.com/IarveJ/PYNQ_facialRec/blob/master/PYNQ_FacialRecognition.py).
-is a simple example that can be used to run this system.
+file location and paste these into the code with the identified individuals name.
+[My code](https://github.com/IarveJ/PYNQ_facialRec/blob/master/PYNQ_FacialRecognition.py) is a simple example that can be used to run this system.
 
 # Project Topics
 ### Development
