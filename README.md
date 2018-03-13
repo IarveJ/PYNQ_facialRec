@@ -5,13 +5,21 @@ Author: Jacob Iarve
 
 ## Getting Started
 ### Introduction
-For my midterm project, I have interfaced the Xilinx PYNQ-Z1 with a webcam and an HDMI output.
+  For my midterm project, I have interfaced the Xilinx PYNQ-Z1 with a webcam and an HDMI output.
 Using PYNQ, it is easy to create overlays that abstract low-level FPGA logic into high 
 level languages such as Python 3. Using overlays to program in Python, I installed a Python Facial 
 Recognition package that I used to create a Facial Recognition Security System.
+  The code for this project works in the following way. It creates I/O Driver objects using OpenCV2
+Library to interface a webcam and uses the PYNQ library to interface the HDMI output. After instantiating
+each driver, the program will import the facial recognition library and all the images and names for 
+each identified individual. Once completed, PYNQ will input every other frame, process the image, and detect
+any faces in the frame. In shunt, the program will look to see if the detected face matches any of the 
+facial encodings from the identified individuals. If the face matches, the system will print their name
+under their face or print "UNKNOWN" if the face is not recognized.
 ### Demo
+[![Click to view on Youtube](https://img.youtube.com/vi/-fjIbl0YfcM/0.jpg)](https://www.youtube.com/watch?v=-fjIbl0YfcM)
 
-[![](https://img.youtube.com/vi/-fjIbl0YfcM/0.jpg)](https://www.youtube.com/watch?v=-fjIbl0YfcM)
+Click the image above to be redirected to Youtube and watch a short demo of the project.
 ### Built With
 * OpenCV 2 - Comes installed on PYNQ.
 * [Ageitgey Facial Recognition](https://github.com/ageitgey/face_recognition) -Facial Recognition Library Used
@@ -22,7 +30,11 @@ Once connected, open up a Terminal in Jupyter notebooks and run the following co
 ```
 sudo pip install git+https://github.com/ageitgey/face_recognition
 ```
-The installation may take many hours to complete however, once completed the user can simply plug in the drivers and run [my code](https://github.com/IarveJ/PYNQ_facialRec/blob/master/PYNQ_FacialRecognition.py).
+The installation may take many hours to complete.
+
+Once completed the user can simply upload pictures via juptyer notebooks and redirect them to easily found
+file location and paste these into the code with the identified individuals name. [My code](https://github.com/IarveJ/PYNQ_facialRec/blob/master/PYNQ_FacialRecognition.py).
+is a simple example that can be used to run this system.
 
 ## Project Topics
 ### Development
