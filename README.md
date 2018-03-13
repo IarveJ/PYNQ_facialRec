@@ -36,7 +36,7 @@ Once completed the user can simply upload pictures via juptyer notebooks and red
 file location and paste these into the code with the identified individuals name. [My code](https://github.com/IarveJ/PYNQ_facialRec/blob/master/PYNQ_FacialRecognition.py).
 is a simple example that can be used to run this system.
 
-## Project Topics
+# Project Topics
 ### Development
 To develop this code, I first used the [Webcam Face Detection](https://github.com/Xilinx/PYNQ/blob/v1.4/Pynq-Z1/notebooks/examples/opencv_face_detect_webcam.ipynb) example found in the Juptyer Notebook Files of PYNQ. 
 This example allowed me to simply take a picture with openCV face detection, and display the resultant image via HDMI out.
@@ -47,6 +47,19 @@ the code to work with the PYNQ board. Overall, most of the code used was an inte
 * Added video image processing from simple capture and display image processing in example.
 * Integrated Facial Recognition libary to work on PYNQ
 * Extensively used Operating Systems to import image files and install Python Library
+### Known Issues
+* Output Lag
+* Color Distortion
+* Output Frame
+
+  The first of the known issues is the output lag. From manually timing, the program will input, then process an image for roughly 3 
+seconds before outputting it via HDMI. To reduce this output lag, I have the program only processing every other frame making therefore at
+30Hz, however the bug persists and does not seem affected by the reduction in processing. Further reduction of processing would put it 
+close to, or under the optimal 25Hz which is smooth motion to the human eye. 
+  The second bug is sometimes the program will output Color Distorted images on to the lab's VGA monitors. This bug does not occur at home 
+when directly plugging the system into a TV's HDMI input, but rather appears occassionally (not every time) onto VGA monitors when using a 
+passive HDMI to VGA adapter. This bug is similar to the third bug, the Output Frame issue, where the system will shift all the array 
+values and move the image to the right when outputting to via the VIA adapter.
 ### References
 * [Raspberry Pi example](https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py) -Ageitgey's Raspberry Pi example adapted for implemention with PYNQ
 * [Webcam Face Detection](https://github.com/Xilinx/PYNQ/blob/v1.4/Pynq-Z1/notebooks/examples/opencv_face_detect_webcam.ipynb) -PYNQ example using OpenCV to interface webcam and HDMI output, and detect faces.
