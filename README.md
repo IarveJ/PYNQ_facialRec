@@ -10,7 +10,8 @@ Using PYNQ, it is easy to create overlays that abstract low-level FPGA logic int
 level languages such as Python 3. Using overlays to program in Python, I installed a Python Facial 
 Recognition package that I used to create a Facial Recognition Security System.
 ### Demo
-Add a video geez dude
+
+[![](https://img.youtube.com/vi/-fjIbl0YfcM/0.jpg)](https://www.youtube.com/watch?v=-fjIbl0YfcM)
 ### Built With
 * OpenCV 2 - Comes installed on PYNQ.
 * [Ageitgey Facial Recognition](https://github.com/ageitgey/face_recognition) -Facial Recognition Library Used
