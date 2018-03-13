@@ -9,7 +9,8 @@ Author: Jacob Iarve
 Using PYNQ, it is easy to create overlays that abstract low-level FPGA logic into high 
 level languages such as Python 3. Using overlays to program in Python, I installed a Python Facial 
 Recognition package that I used to create a Facial Recognition Security System.
-  The code for this project works in the following way. It creates I/O Driver objects using OpenCV2
+ 
+ The code for this project works in the following way. It creates I/O Driver objects using OpenCV2
 Library to interface a webcam and uses the PYNQ library to interface the HDMI output. After instantiating
 each driver, the program will import the facial recognition library and all the images and names for 
 each identified individual. Once completed, PYNQ will input every other frame, process the image, and detect
@@ -51,12 +52,13 @@ the code to work with the PYNQ board. Overall, most of the code used was an inte
 * Output Lag
 * Color Distortion
 * Output Frame
-
-  The first of the known issues is the output lag. From manually timing, the program will input, then process an image for roughly 3 
+ 
+ The first of the known issues is the output lag. From manually timing, the program will input, then process an image for roughly 3 
 seconds before outputting it via HDMI. To reduce this output lag, I have the program only processing every other frame making therefore at
 30Hz, however the bug persists and does not seem affected by the reduction in processing. Further reduction of processing would put it 
 close to, or under the optimal 25Hz which is smooth motion to the human eye. 
-  The second bug is sometimes the program will output Color Distorted images on to the lab's VGA monitors. This bug does not occur at home 
+ 
+ The second bug is sometimes the program will output Color Distorted images on to the lab's VGA monitors. This bug does not occur at home 
 when directly plugging the system into a TV's HDMI input, but rather appears occassionally (not every time) onto VGA monitors when using a 
 passive HDMI to VGA adapter. This bug is similar to the third bug, the Output Frame issue, where the system will shift all the array 
 values and move the image to the right when outputting to via the VIA adapter.
