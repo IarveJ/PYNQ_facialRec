@@ -42,7 +42,7 @@ when one is flagged. Using coroutines you essentially create an event loop and s
 like it to go and what tasks can happen along the event loop. An interrupt essentially tells the interrupt
 to switch states while stopping the processors function to handle the next executable. In my code, I have
 abstracted the coroutines to functions called when any interrupt (button or switch) is sent. These classes,
-now make it easier to code on top of the AsyncIO event loop. [Click here to via this page.](https://github.com/IarveJ/InterruptsPYNQ)
+now make it easier to code on top of the AsyncIO event loop. [Click here to view this page.](https://github.com/IarveJ/InterruptsPYNQ)
 
 ### System Architecture
   My system has two major drivers that need to be included for the code to execute. The first is a webcam,
